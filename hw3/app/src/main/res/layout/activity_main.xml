@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:scrollbarSize="34sp"
+        android:text="Grade Calculator"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColorLink="#090909"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:fontFamily="casual"
+        android:scrollbarSize="30sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColorLink="#090909"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Quizes"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#6B3F51B5"
+        android:ems="10"
+        android:hint="Quizes 15%"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Homework"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/Quizes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#6B3F51B5"
+        android:ems="10"
+        android:hint="Homework 25%"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/MidTerms"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/Homework"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#6B3F51B5"
+        android:ems="10"
+        android:hint="Mid terms 30%"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/finals"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/MidTerms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#6B3F51B5"
+        android:ems="10"
+        android:hint="Final 30%"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/finals"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="#DD9C27B0"
+        android:fontFamily="casual"
+        android:text="CALCULATE"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/calculate"
+        android:layout_marginTop="80dp"/>
+
+
+
+</RelativeLayout>
